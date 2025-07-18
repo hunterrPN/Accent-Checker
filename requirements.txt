@@ -1,0 +1,43 @@
+# ----------------------
+# Core Libraries
+# ----------------------
+numpy==1.26.4  
+pandas==2.3.1
+scikit-learn==1.7.0
+joblib==1.5.1
+tqdm==4.67.1 
+
+# ----------------------
+# Audio Processing
+# ----------------------
+librosa==0.10.1
+pydub==0.25.1
+soundfile==0.13.1  # required by librosa
+
+
+# ----------------------
+# Web App
+# ----------------------
+flask == 3.1.1  
+
+# ----------------------
+# Visualization (optional)
+# ----------------------
+matplotlib==3.7.3  # compatible with librosa and streamlit
+seaborn==0.13.2
+mlflow == 2.22.1
+# ----------------------
+# Dev Tools (optional)
+# ----------------------
+ipython==8.37.0
+
+# ----------------------
+# Optional: Env Management
+# ----------------------
+python-dotenv==1.1.1
+
+PyYAML==6.0.2  # for configuration management
+
+pytest>=8.4.1 
+  
+pytest-mock==3.10.0  # for mocking in tests
