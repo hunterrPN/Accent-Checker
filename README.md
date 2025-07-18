@@ -67,5 +67,3 @@ A **Streamlit web app** is included to test audio samples in real-time and get p
 
 ---
 
-## 📁 Folder Structure
-
