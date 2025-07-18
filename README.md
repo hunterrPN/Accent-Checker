@@ -1,65 +1,71 @@
-Predict the speaker’s accent from audio using MFCCs, audio augmentation, and classical ML models.
+# 🗣️ Accent Detection from Audio using MFCCs & Classical ML
 
-This project predicts the accent of a speaker from a .wav audio sample using machine learning. It is built as a complete end-to-end pipeline including:
+This project predicts the **accent of a speaker** from a `.wav` audio sample using a complete **machine learning pipeline**.
 
-🎧 Audio preprocessing and augmentation
+---
 
-🔍 Feature extraction (MFCC, ZCR, RMSE)
+## 🚀 Pipeline Overview
 
-🧠 Model training and evaluation (Random Forest / Logistic Regression)
+- 🎧 **Audio Preprocessing & Augmentation**
+- 🔍 **Feature Extraction** (MFCCs, ZCR, RMSE)
+- 🤖 **Model Training & Evaluation**
+- 🧪 **Data Versioning** with DVC
+- 🌐 **Streamlit App** for real-time accent prediction
 
-🧪 Data versioning via DVC
+---
 
-🌐 Streamlit app for real-time accent prediction
+## 📊 Features Extracted
 
+From each audio file, the following features are extracted:
 
+- 🎼 **MFCCs (13 Coefficients)** — Mel Frequency Cepstral Coefficients
+- 📉 **ZCR** — Zero Crossing Rate
+- 🔋 **RMSE** — Root Mean Square Energy
 
+---
 
-Features Extracted
-From each audio file, we extract:
+## 🎛️ Audio Augmentation Techniques
 
-MFCCs (13 coefficients) — Mel Frequency Cepstral Coefficients
+To make the model robust and generalizable, these augmentations are applied:
 
-ZCR — Zero Crossing Rate
+- ⏩ **Time Stretching**
+- 🔁 **Pitch Shifting**
+- 🔊 **Noise Addition**
 
-RMSE — Root Mean Square Energy
+---
 
-🔄 Audio Augmentation
-To improve model generalization, we apply:
+## 🧠 Model Training & Evaluation
 
-🎵 Time stretching
+Two models were trained and evaluated:
 
-📈 Pitch shifting
+| Model                | Accuracy | Status         |
+|---------------------|----------|----------------|
+| Random Forest        | ~92%     | ❌ Not selected |
+| Logistic Regression  | **~96%** | ✅ Final model  |
 
-🔊 Noise addition
+**Evaluation Metrics:**
 
-This ensures robustness to variations in speech.
+- ✅ Accuracy
+- 🔍 Confusion Matrix
+- 📈 Learning Curves
 
-🤖 Model Training
-Models Compared:
+---
 
-RandomForestClassifier
+## 📦 Version Control with DVC
 
-LogisticRegression (final selected)
+[DVC](https://dvc.org/) is used to version:
 
-Evaluation Metrics:
+- 📁 Raw & Intermediate Datasets  
+- 📐 Feature Files  
+- 🧠 Trained Models  
 
-Accuracy
+---
 
-Confusion matrix
+## 🌐 Live App with Streamlit
 
-Learning curve
+A **Streamlit web app** is included to test audio samples in real-time and get predictions instantly.
 
-Final Model: Logistic Regression
+---
 
-Test Accuracy: ~96%
-
-📦 Version Control with DVC
-used DVC to version:
-
-Raw & interim datasets
-
-Feature-engineered files
-
-Trained models
+## 📁 Folder Structure
 
